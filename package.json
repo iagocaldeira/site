@@ -8,9 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "cp resources/* dist/ && cp src/styles/main.css dist/ && pug src/index.pug -o dist"
+    "build": "cp resources/* dist/ && stylus src/styles/main.styl --out dist/ && pug src/index.pug -o dist"
   },
   "devDependencies": {
-    "pug-cli": "1.0.0-alpha6"
+    "pug-cli": "1.0.0-alpha6",
+    "stylus": "^0.54.5"
   }
 }
